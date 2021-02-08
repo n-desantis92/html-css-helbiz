@@ -112,14 +112,57 @@ h1 {
   margin-bottom: 60px;
 }
 /* /prodotti */
+/* old-man */
+#old-man .banner {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.blocco-phone {
+  margin: auto;
+  width: 80%;
+  position: relative;
+}
+.phone {
+  transform: translateY(-300px);
+  vertical-align: baseline;
+}
+
+.phone img {
+  width: 100%;
+  background-image: url(../img/iphone-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* /old-man */
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 80px;
+  }
+
+  .phone {
+  transform: translateY(-250px);
   }
 }
 
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 60px;
+  }
+  #old-man .banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: inherit;
+  }
+  .phone {
+  transform: translateY(-150px);
+
   }
 }
